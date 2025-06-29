@@ -1,0 +1,22 @@
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_setup.py:_flush():81] Configure stats pid to 85819
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_setup.py:_flush():81] Loading settings from /Users/charon/.config/wandb/settings
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_setup.py:_flush():81] Loading settings from /Users/charon/Documents/GitHub/CS336/wandb/settings
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /Users/charon/Documents/GitHub/CS336/wandb/run-20250627_205757-xx804zqz/logs/debug.log
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /Users/charon/Documents/GitHub/CS336/wandb/run-20250627_205757-xx804zqz/logs/debug-internal.log
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_init.py:init():831] calling init triggers
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-06-27 20:57:57,803 INFO    MainThread:85819 [wandb_init.py:init():872] starting backend
+2025-06-27 20:57:58,025 INFO    MainThread:85819 [wandb_init.py:init():875] sending inform_init request
+2025-06-27 20:57:58,045 INFO    MainThread:85819 [wandb_init.py:init():883] backend started and connected
+2025-06-27 20:57:58,048 INFO    MainThread:85819 [wandb_init.py:init():956] updated telemetry
+2025-06-27 20:57:58,074 INFO    MainThread:85819 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-06-27 20:57:59,433 INFO    MainThread:85819 [wandb_init.py:init():1032] starting run threads in backend
+2025-06-27 20:57:59,620 INFO    MainThread:85819 [wandb_run.py:_console_start():2453] atexit reg
+2025-06-27 20:57:59,620 INFO    MainThread:85819 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-06-27 20:57:59,620 INFO    MainThread:85819 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-06-27 20:57:59,620 INFO    MainThread:85819 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-06-27 20:57:59,621 INFO    MainThread:85819 [wandb_init.py:init():1078] run started, returning control to user process
+2025-06-27 20:58:00,920 INFO    MsgRouterThr:85819 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

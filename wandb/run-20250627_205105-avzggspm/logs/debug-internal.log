@@ -1,0 +1,15 @@
+{"time":"2025-06-27T20:51:05.537396+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/Users/charon/Documents/GitHub/CS336/wandb/run-20250627_205105-avzggspm/logs/debug-core.log"}
+{"time":"2025-06-27T20:51:06.618588+08:00","level":"INFO","msg":"stream: created new stream","id":"avzggspm"}
+{"time":"2025-06-27T20:51:06.618624+08:00","level":"INFO","msg":"stream: started","id":"avzggspm"}
+{"time":"2025-06-27T20:51:06.618634+08:00","level":"INFO","msg":"handler: started","stream_id":"avzggspm"}
+{"time":"2025-06-27T20:51:06.618657+08:00","level":"INFO","msg":"sender: started","stream_id":"avzggspm"}
+{"time":"2025-06-27T20:51:06.61866+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"avzggspm"}
+{"time":"2025-06-27T20:51:07.024025+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-27T20:51:08.548198+08:00","level":"INFO","msg":"stream: closing","id":"avzggspm"}
+{"time":"2025-06-27T20:51:08.548232+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-27T20:51:08.548268+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-27T20:51:09.698191+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-27T20:51:10.493919+08:00","level":"INFO","msg":"handler: closed","stream_id":"avzggspm"}
+{"time":"2025-06-27T20:51:10.49403+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"avzggspm"}
+{"time":"2025-06-27T20:51:10.497567+08:00","level":"INFO","msg":"sender: closed","stream_id":"avzggspm"}
+{"time":"2025-06-27T20:51:10.497656+08:00","level":"INFO","msg":"stream: closed","id":"avzggspm"}

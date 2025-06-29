@@ -1,0 +1,78 @@
+{
+  "os":  "macOS-15.5-arm64-arm-64bit",
+  "python":  "CPython 3.10.16",
+  "startedAt":  "2025-06-27T14:30:04.104786Z",
+  "args":  [
+    "--dataset_name",
+    "tinystory",
+    "--vocab_size",
+    "10000",
+    "--context_length",
+    "256",
+    "--batch_size",
+    "16",
+    "--d_model",
+    "512",
+    "--num_layers",
+    "4",
+    "--num_heads",
+    "16",
+    "--d_ff",
+    "1344",
+    "--total_iters",
+    "20000",
+    "--max_learning_rate",
+    "5e-4",
+    "--cosine_cycle_iters",
+    "20000",
+    "--weight_decay",
+    "0.001",
+    "--wandb_logging",
+    "True",
+    "--wandb_project",
+    "cs336-assignment1",
+    "--wandb_run_name",
+    "tinystories-baseline",
+    "--eval_interval",
+    "200",
+    "--log_interval",
+    "20"
+  ],
+  "program":  "<python with no main file>",
+  "git":  {
+    "remote":  "https://github.com/boss-yang702/CS336.git",
+    "commit":  "abbaf067a7e53aca8157398c705a7d4982091012"
+  },
+  "email":  "2338321174@qq.com",
+  "root":  "/Users/charon/Documents/GitHub/CS336",
+  "host":  "CharondeMacBook-Pro.local",
+  "executable":  "/Users/charon/miniconda3/envs/llm/bin/python",
+  "cpu_count":  10,
+  "cpu_count_logical":  10,
+  "disk":  {
+    "/":  {
+      "total":  "994662584320",
+      "used":  "450656641024"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "994662584320",
+      "used":  "450656641024"
+    }
+  },
+  "memory":  {
+    "total":  "34359738368"
+  },
+  "cpu":  {
+    "count":  10,
+    "countLogical":  10
+  },
+  "apple":  {
+    "name":  "Apple M1 Pro",
+    "ecpuCores":  2,
+    "pcpuCores":  8,
+    "gpuCores":  14,
+    "memoryGb":  32,
+    "swapTotalBytes":  "9663676416",
+    "ramTotalBytes":  "34359738368"
+  }
+}

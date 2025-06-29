@@ -1,0 +1,133 @@
+2025-06-27 21:59:31,928 - INFO - Training with config: {'dataset_name': 'tinystory', 'context_length': 256, 'batch_size': 8, 'device': 'mps', 'vocab_size': 10000, 'context_size': 1024, 'num_layers': 4, 'd_model': 512, 'num_heads': 16, 'd_ff': 1344, 'attn_pdrop': 0.1, 'resid_pdrop': 0.1, 'init_from': 'scratch', 'total_iters': 20000, 'warmup_iters': 200, 'cosine_cycle_iters': 20000, 'max_learning_rate': 0.0005, 'min_learning_rate': 0, 'weight_decay': 0.001, 'wandb_logging': True, 'wandb_project': 'cs336-assignment1', 'wandb_run_name': 'tinystories-baseline', 'log_interval': 20, 'eval_interval': 200, 'eval_iters': 100, 'no_rmsnorm': False, 'parallel_layers': False, 'post_norm': False}
+2025-06-27 21:59:33,927 - INFO - number of non-embeding parameters: 8.23
+2025-06-27 21:59:36,471 - INFO - Iter: 0, Train loss: 9.2415, LR: 0.000000, Time: 1829.05ms
+2025-06-27 21:59:39,075 - INFO - Iter: 0, Val loss: 9.2383, LR: 0.000000
+2025-06-27 21:59:41,490 - INFO - Iter: 20, Train loss: 9.0540, LR: 0.000050, Time: 82.15ms
+2025-06-27 21:59:43,120 - INFO - Iter: 40, Train loss: 8.4089, LR: 0.000100, Time: 81.52ms
+2025-06-27 21:59:44,754 - INFO - Iter: 60, Train loss: 6.7734, LR: 0.000150, Time: 81.21ms
+2025-06-27 21:59:46,392 - INFO - Iter: 80, Train loss: 5.4497, LR: 0.000200, Time: 85.26ms
+2025-06-27 21:59:48,049 - INFO - Iter: 100, Train loss: 4.9922, LR: 0.000250, Time: 83.25ms
+2025-06-27 21:59:49,728 - INFO - Iter: 120, Train loss: 4.7858, LR: 0.000300, Time: 83.70ms
+2025-06-27 21:59:51,398 - INFO - Iter: 140, Train loss: 4.2229, LR: 0.000350, Time: 83.42ms
+2025-06-27 21:59:53,038 - INFO - Iter: 160, Train loss: 3.8930, LR: 0.000400, Time: 82.15ms
+2025-06-27 21:59:54,712 - INFO - Iter: 180, Train loss: 4.1221, LR: 0.000450, Time: 84.21ms
+2025-06-27 21:59:56,348 - INFO - Iter: 200, Train loss: 4.1125, LR: 0.000500, Time: 82.17ms
+2025-06-27 21:59:58,695 - INFO - Iter: 200, Val loss: 3.9857, LR: 0.000500
+2025-06-27 22:00:00,523 - INFO - Iter: 220, Train loss: 4.1280, LR: 0.000500, Time: 82.72ms
+2025-06-27 22:00:02,168 - INFO - Iter: 240, Train loss: 3.9408, LR: 0.000500, Time: 81.87ms
+2025-06-27 22:00:03,817 - INFO - Iter: 260, Train loss: 3.8773, LR: 0.000500, Time: 82.30ms
+2025-06-27 22:00:05,463 - INFO - Iter: 280, Train loss: 3.8788, LR: 0.000500, Time: 81.62ms
+2025-06-27 22:00:07,106 - INFO - Iter: 300, Train loss: 3.9209, LR: 0.000500, Time: 80.99ms
+2025-06-27 22:00:08,751 - INFO - Iter: 320, Train loss: 3.8675, LR: 0.000500, Time: 81.18ms
+2025-06-27 22:00:10,426 - INFO - Iter: 340, Train loss: 3.5375, LR: 0.000500, Time: 82.16ms
+2025-06-27 22:00:12,098 - INFO - Iter: 360, Train loss: 3.6586, LR: 0.000500, Time: 82.79ms
+2025-06-27 22:00:13,814 - INFO - Iter: 380, Train loss: 3.6079, LR: 0.000500, Time: 86.68ms
+2025-06-27 22:00:15,512 - INFO - Iter: 400, Train loss: 3.7169, LR: 0.000500, Time: 81.16ms
+2025-06-27 22:00:17,886 - INFO - Iter: 400, Val loss: 3.5423, LR: 0.000500
+2025-06-27 22:00:19,739 - INFO - Iter: 420, Train loss: 3.4272, LR: 0.000500, Time: 84.76ms
+2025-06-27 22:00:21,457 - INFO - Iter: 440, Train loss: 3.4515, LR: 0.000500, Time: 83.47ms
+2025-06-27 22:00:23,141 - INFO - Iter: 460, Train loss: 3.4377, LR: 0.000500, Time: 83.31ms
+Traceback (most recent call last):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/Users/charon/Documents/GitHub/CS336/basics/train.py", line 118, in <module>
+    logits = model(x)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 655, in _fn
+    return fn(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/charon/Documents/GitHub/CS336/basics/model.py", line 244, in forward
+    def forward(self,x):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 838, in _fn
+    return fn(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1209, in forward
+    return compiled_fn(full_args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 315, in runtime_wrapper
+    all_outs = call_func_at_runtime_with_args(
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py", line 126, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py", line 100, in g
+    return f(*args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 1937, in forward
+    fw_outs = call_func_at_runtime_with_args(
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py", line 126, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 495, in wrapper
+    return compiled_fn(runtime_args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 689, in inner_fn
+    outs = compiled_fn(args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_dynamo/backends/debugging.py", line 135, in run
+    return torch.fx.Interpreter(fx_g).boxed_run(args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/fx/interpreter.py", line 213, in boxed_run
+    return self.run(initial_env=env)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/fx/interpreter.py", line 171, in run
+    self.env[node] = self.run_node(node)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/fx/interpreter.py", line 240, in run_node
+    return getattr(self, n.op)(n.target, args, kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/fx/interpreter.py", line 320, in call_function
+    return target(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_ops.py", line 756, in __call__
+    return self._op(*args, **kwargs)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/Users/charon/Documents/GitHub/CS336/basics/train.py", line 118, in <module>
+    logits = model(x)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 655, in _fn
+    return fn(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/charon/Documents/GitHub/CS336/basics/model.py", line 244, in forward
+    def forward(self,x):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 838, in _fn
+    return fn(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1209, in forward
+    return compiled_fn(full_args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 315, in runtime_wrapper
+    all_outs = call_func_at_runtime_with_args(
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py", line 126, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py", line 100, in g
+    return f(*args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 1937, in forward
+    fw_outs = call_func_at_runtime_with_args(
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py", line 126, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 495, in wrapper
+    return compiled_fn(runtime_args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 689, in inner_fn
+    outs = compiled_fn(args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_dynamo/backends/debugging.py", line 135, in run
+    return torch.fx.Interpreter(fx_g).boxed_run(args)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/fx/interpreter.py", line 213, in boxed_run
+    return self.run(initial_env=env)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/fx/interpreter.py", line 171, in run
+    self.env[node] = self.run_node(node)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/fx/interpreter.py", line 240, in run_node
+    return getattr(self, n.op)(n.target, args, kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/fx/interpreter.py", line 320, in call_function
+    return target(*args, **kwargs)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/site-packages/torch/_ops.py", line 756, in __call__
+    return self._op(*args, **kwargs)
+KeyboardInterrupt

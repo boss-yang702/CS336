@@ -1,0 +1,43 @@
+2025-06-27 22:03:12,677 - INFO - Training with config: {'dataset_name': 'tinystory', 'context_length': 256, 'batch_size': 128, 'device': 'mps', 'vocab_size': 10000, 'context_size': 1024, 'num_layers': 4, 'd_model': 512, 'num_heads': 16, 'd_ff': 1344, 'attn_pdrop': 0.1, 'resid_pdrop': 0.1, 'init_from': 'scratch', 'total_iters': 20000, 'warmup_iters': 200, 'cosine_cycle_iters': 20000, 'max_learning_rate': 0.0005, 'min_learning_rate': 0, 'weight_decay': 0.001, 'wandb_logging': True, 'wandb_project': 'cs336-assignment1', 'wandb_run_name': 'tinystories-baseline', 'log_interval': 20, 'eval_interval': 200, 'eval_iters': 100, 'no_rmsnorm': False, 'parallel_layers': False, 'post_norm': False}
+2025-06-27 22:03:13,775 - INFO - number of non-embeding parameters: 8.23
+2025-06-27 22:03:17,628 - INFO - Iter: 0, Train loss: 9.2571, LR: 0.000000, Time: 3738.42ms
+2025-06-27 22:03:51,783 - INFO - Iter: 0, Val loss: 9.2598, LR: 0.000000
+2025-06-27 22:04:13,036 - INFO - Iter: 20, Train loss: 8.9962, LR: 0.000050, Time: 1036.74ms
+2025-06-27 22:04:33,694 - INFO - Iter: 40, Train loss: 8.1370, LR: 0.000100, Time: 1040.50ms
+2025-06-27 22:04:54,453 - INFO - Iter: 60, Train loss: 6.2233, LR: 0.000150, Time: 1036.48ms
+2025-06-27 22:05:14,866 - INFO - Iter: 80, Train loss: 5.1371, LR: 0.000200, Time: 1017.79ms
+2025-06-27 22:05:35,453 - INFO - Iter: 100, Train loss: 4.6491, LR: 0.000250, Time: 1030.83ms
+2025-06-27 22:05:56,096 - INFO - Iter: 120, Train loss: 4.2056, LR: 0.000300, Time: 1022.07ms
+2025-06-27 22:06:16,719 - INFO - Iter: 140, Train loss: 3.9797, LR: 0.000350, Time: 1041.07ms
+2025-06-27 22:06:37,433 - INFO - Iter: 160, Train loss: 3.7995, LR: 0.000400, Time: 1027.77ms
+2025-06-27 22:06:57,982 - INFO - Iter: 180, Train loss: 3.7104, LR: 0.000450, Time: 1025.09ms
+2025-06-27 22:07:18,518 - INFO - Iter: 200, Train loss: 3.5672, LR: 0.000500, Time: 1044.70ms
+2025-06-27 22:07:52,631 - INFO - Iter: 200, Val loss: 3.6236, LR: 0.000500
+2025-06-27 22:08:13,848 - INFO - Iter: 220, Train loss: 3.4151, LR: 0.000500, Time: 1032.65ms
+2025-06-27 22:08:34,577 - INFO - Iter: 240, Train loss: 3.3622, LR: 0.000500, Time: 1039.05ms
+2025-06-27 22:08:55,320 - INFO - Iter: 260, Train loss: 3.3423, LR: 0.000500, Time: 1033.51ms
+2025-06-27 22:09:15,921 - INFO - Iter: 280, Train loss: 3.2635, LR: 0.000500, Time: 1044.09ms
+2025-06-27 22:09:36,780 - INFO - Iter: 300, Train loss: 3.1740, LR: 0.000500, Time: 1030.80ms
+2025-06-27 22:09:57,477 - INFO - Iter: 320, Train loss: 3.2181, LR: 0.000500, Time: 1033.08ms
+2025-06-27 22:10:18,317 - INFO - Iter: 340, Train loss: 3.1132, LR: 0.000500, Time: 1052.50ms
+2025-06-27 22:10:39,052 - INFO - Iter: 360, Train loss: 3.0657, LR: 0.000500, Time: 1029.97ms
+Traceback (most recent call last):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/Users/charon/Documents/GitHub/CS336/basics/train.py", line 121, in <module>
+    data_loading_time = t1 - t0
+  File "/Users/charon/Documents/GitHub/CS336/basics/nn_utils.py", line 27, in clip_gradient
+    clip_coef = min(1, max_norm / (norm + 1e-6))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/Users/charon/Documents/GitHub/CS336/basics/train.py", line 121, in <module>
+    data_loading_time = t1 - t0
+  File "/Users/charon/Documents/GitHub/CS336/basics/nn_utils.py", line 27, in clip_gradient
+    clip_coef = min(1, max_norm / (norm + 1e-6))
+KeyboardInterrupt

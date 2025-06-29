@@ -1,0 +1,102 @@
+2025-06-27 22:14:53,162 - INFO - Training with config: {'dataset_name': 'tinystory', 'context_length': 256, 'batch_size': 64, 'device': 'mps', 'vocab_size': 10000, 'context_size': 1024, 'num_layers': 4, 'd_model': 512, 'num_heads': 16, 'd_ff': 1344, 'attn_pdrop': 0.1, 'resid_pdrop': 0.1, 'init_from': 'scratch', 'total_iters': 10000, 'warmup_iters': 100, 'cosine_cycle_iters': 10000, 'max_learning_rate': 0.0005, 'min_learning_rate': 0, 'weight_decay': 0.001, 'wandb_logging': True, 'wandb_project': 'cs336-assignment1', 'wandb_run_name': 'tinystories-baseline', 'log_interval': 20, 'eval_interval': 200, 'eval_iters': 100, 'no_rmsnorm': False, 'parallel_layers': False, 'post_norm': False}
+2025-06-27 22:14:55,153 - INFO - number of non-embeding parameters: 8.23
+2025-06-27 22:14:57,546 - INFO - Iter: 0, Train loss: 9.2664, LR: 0.000000, Data Loading Time: 2.33ms | Model Compute Time: 2269.62ms
+2025-06-27 22:15:14,901 - INFO - Iter: 0, Val loss: 9.2610, LR: 0.000000
+2025-06-27 22:15:25,983 - INFO - Iter: 20, Train loss: 8.7866, LR: 0.000100, Data Loading Time: 6.32ms | Model Compute Time: 514.30ms
+2025-06-27 22:15:36,448 - INFO - Iter: 40, Train loss: 6.7463, LR: 0.000200, Data Loading Time: 6.33ms | Model Compute Time: 516.87ms
+2025-06-27 22:15:46,973 - INFO - Iter: 60, Train loss: 5.1610, LR: 0.000300, Data Loading Time: 6.87ms | Model Compute Time: 519.28ms
+2025-06-27 22:15:57,477 - INFO - Iter: 80, Train loss: 4.4388, LR: 0.000400, Data Loading Time: 8.59ms | Model Compute Time: 515.87ms
+2025-06-27 22:16:07,951 - INFO - Iter: 100, Train loss: 3.9991, LR: 0.000500, Data Loading Time: 7.53ms | Model Compute Time: 514.95ms
+2025-06-27 22:16:18,442 - INFO - Iter: 120, Train loss: 3.9440, LR: 0.000500, Data Loading Time: 6.78ms | Model Compute Time: 518.55ms
+2025-06-27 22:16:28,916 - INFO - Iter: 140, Train loss: 3.7253, LR: 0.000500, Data Loading Time: 7.02ms | Model Compute Time: 514.37ms
+2025-06-27 22:16:39,407 - INFO - Iter: 160, Train loss: 3.6374, LR: 0.000500, Data Loading Time: 6.92ms | Model Compute Time: 516.88ms
+2025-06-27 22:16:50,055 - INFO - Iter: 180, Train loss: 3.5526, LR: 0.000500, Data Loading Time: 7.25ms | Model Compute Time: 518.85ms
+2025-06-27 22:17:00,665 - INFO - Iter: 200, Train loss: 3.5502, LR: 0.000500, Data Loading Time: 6.68ms | Model Compute Time: 522.97ms
+2025-06-27 22:17:17,968 - INFO - Iter: 200, Val loss: 3.4441, LR: 0.000500
+2025-06-27 22:17:28,825 - INFO - Iter: 220, Train loss: 3.3385, LR: 0.000500, Data Loading Time: 6.43ms | Model Compute Time: 519.07ms
+2025-06-27 22:17:39,513 - INFO - Iter: 240, Train loss: 3.3763, LR: 0.000500, Data Loading Time: 7.21ms | Model Compute Time: 527.54ms
+2025-06-27 22:17:50,183 - INFO - Iter: 260, Train loss: 3.3448, LR: 0.000500, Data Loading Time: 6.87ms | Model Compute Time: 525.72ms
+2025-06-27 22:18:00,699 - INFO - Iter: 280, Train loss: 3.2812, LR: 0.000500, Data Loading Time: 6.59ms | Model Compute Time: 516.49ms
+2025-06-27 22:18:11,164 - INFO - Iter: 300, Train loss: 3.2140, LR: 0.000499, Data Loading Time: 7.07ms | Model Compute Time: 515.35ms
+2025-06-27 22:18:21,629 - INFO - Iter: 320, Train loss: 3.1512, LR: 0.000499, Data Loading Time: 6.94ms | Model Compute Time: 516.45ms
+2025-06-27 22:18:32,110 - INFO - Iter: 340, Train loss: 3.1776, LR: 0.000499, Data Loading Time: 7.01ms | Model Compute Time: 516.88ms
+2025-06-27 22:18:42,578 - INFO - Iter: 360, Train loss: 3.1569, LR: 0.000499, Data Loading Time: 6.90ms | Model Compute Time: 516.81ms
+2025-06-27 22:18:53,055 - INFO - Iter: 380, Train loss: 3.0711, LR: 0.000499, Data Loading Time: 6.82ms | Model Compute Time: 514.20ms
+2025-06-27 22:19:03,529 - INFO - Iter: 400, Train loss: 3.0119, LR: 0.000499, Data Loading Time: 7.06ms | Model Compute Time: 516.09ms
+2025-06-27 22:19:20,638 - INFO - Iter: 400, Val loss: 3.0780, LR: 0.000499
+2025-06-27 22:19:31,272 - INFO - Iter: 420, Train loss: 2.9513, LR: 0.000499, Data Loading Time: 6.79ms | Model Compute Time: 513.81ms
+2025-06-27 22:19:41,748 - INFO - Iter: 440, Train loss: 3.0578, LR: 0.000499, Data Loading Time: 6.58ms | Model Compute Time: 517.53ms
+2025-06-27 22:19:52,248 - INFO - Iter: 460, Train loss: 2.9556, LR: 0.000498, Data Loading Time: 6.67ms | Model Compute Time: 519.33ms
+2025-06-27 22:20:02,823 - INFO - Iter: 480, Train loss: 2.9482, LR: 0.000498, Data Loading Time: 7.02ms | Model Compute Time: 532.60ms
+2025-06-27 22:20:13,381 - INFO - Iter: 500, Train loss: 2.8488, LR: 0.000498, Data Loading Time: 6.78ms | Model Compute Time: 521.30ms
+2025-06-27 22:20:24,053 - INFO - Iter: 520, Train loss: 3.0112, LR: 0.000498, Data Loading Time: 53.27ms | Model Compute Time: 545.13ms
+2025-06-27 22:20:34,717 - INFO - Iter: 540, Train loss: 2.8081, LR: 0.000498, Data Loading Time: 6.86ms | Model Compute Time: 524.54ms
+2025-06-27 22:20:45,780 - INFO - Iter: 560, Train loss: 2.9231, LR: 0.000497, Data Loading Time: 7.58ms | Model Compute Time: 535.12ms
+2025-06-27 22:20:56,418 - INFO - Iter: 580, Train loss: 2.9349, LR: 0.000497, Data Loading Time: 7.02ms | Model Compute Time: 508.82ms
+2025-06-27 22:21:06,986 - INFO - Iter: 600, Train loss: 2.8631, LR: 0.000497, Data Loading Time: 7.82ms | Model Compute Time: 520.58ms
+2025-06-27 22:21:24,484 - INFO - Iter: 600, Val loss: 2.7304, LR: 0.000497
+2025-06-27 22:21:35,338 - INFO - Iter: 620, Train loss: 2.8647, LR: 0.000497, Data Loading Time: 6.78ms | Model Compute Time: 526.68ms
+2025-06-27 22:21:45,839 - INFO - Iter: 640, Train loss: 2.8637, LR: 0.000496, Data Loading Time: 7.10ms | Model Compute Time: 508.69ms
+2025-06-27 22:21:56,367 - INFO - Iter: 660, Train loss: 2.8042, LR: 0.000496, Data Loading Time: 6.32ms | Model Compute Time: 548.65ms
+2025-06-27 22:22:06,981 - INFO - Iter: 680, Train loss: 2.7594, LR: 0.000496, Data Loading Time: 7.00ms | Model Compute Time: 513.94ms
+2025-06-27 22:22:17,712 - INFO - Iter: 700, Train loss: 2.7339, LR: 0.000495, Data Loading Time: 7.62ms | Model Compute Time: 539.36ms
+2025-06-27 22:22:28,456 - INFO - Iter: 720, Train loss: 2.8317, LR: 0.000495, Data Loading Time: 7.38ms | Model Compute Time: 512.38ms
+2025-06-27 22:22:38,891 - INFO - Iter: 740, Train loss: 2.7391, LR: 0.000495, Data Loading Time: 6.77ms | Model Compute Time: 510.69ms
+2025-06-27 22:22:49,304 - INFO - Iter: 760, Train loss: 2.6806, LR: 0.000495, Data Loading Time: 7.01ms | Model Compute Time: 517.21ms
+2025-06-27 22:22:59,667 - INFO - Iter: 780, Train loss: 2.7314, LR: 0.000494, Data Loading Time: 6.47ms | Model Compute Time: 508.95ms
+2025-06-27 22:23:10,025 - INFO - Iter: 800, Train loss: 2.6503, LR: 0.000494, Data Loading Time: 6.79ms | Model Compute Time: 509.00ms
+2025-06-27 22:23:27,135 - INFO - Iter: 800, Val loss: 2.7530, LR: 0.000494
+2025-06-27 22:23:37,865 - INFO - Iter: 820, Train loss: 2.7559, LR: 0.000494, Data Loading Time: 6.37ms | Model Compute Time: 521.95ms
+2025-06-27 22:23:48,253 - INFO - Iter: 840, Train loss: 2.6618, LR: 0.000493, Data Loading Time: 7.33ms | Model Compute Time: 505.51ms
+2025-06-27 22:23:58,806 - INFO - Iter: 860, Train loss: 2.6606, LR: 0.000493, Data Loading Time: 7.72ms | Model Compute Time: 516.72ms
+2025-06-27 22:24:09,385 - INFO - Iter: 880, Train loss: 2.5999, LR: 0.000492, Data Loading Time: 6.35ms | Model Compute Time: 519.24ms
+2025-06-27 22:24:19,909 - INFO - Iter: 900, Train loss: 2.5319, LR: 0.000492, Data Loading Time: 7.17ms | Model Compute Time: 510.99ms
+2025-06-27 22:24:30,498 - INFO - Iter: 920, Train loss: 2.6860, LR: 0.000492, Data Loading Time: 6.89ms | Model Compute Time: 532.84ms
+2025-06-27 22:24:41,154 - INFO - Iter: 940, Train loss: 2.5603, LR: 0.000491, Data Loading Time: 7.00ms | Model Compute Time: 522.63ms
+2025-06-27 22:24:51,630 - INFO - Iter: 960, Train loss: 2.5809, LR: 0.000491, Data Loading Time: 6.95ms | Model Compute Time: 522.19ms
+2025-06-27 22:25:02,129 - INFO - Iter: 980, Train loss: 2.4996, LR: 0.000490, Data Loading Time: 6.77ms | Model Compute Time: 523.42ms
+2025-06-27 22:25:12,695 - INFO - Iter: 1000, Train loss: 2.4925, LR: 0.000490, Data Loading Time: 6.37ms | Model Compute Time: 522.64ms
+2025-06-27 22:25:29,905 - INFO - Iter: 1000, Val loss: 2.5248, LR: 0.000490
+2025-06-27 22:25:40,662 - INFO - Iter: 1020, Train loss: 2.7606, LR: 0.000489, Data Loading Time: 6.19ms | Model Compute Time: 530.98ms
+2025-06-27 22:25:51,296 - INFO - Iter: 1040, Train loss: 2.5484, LR: 0.000489, Data Loading Time: 6.93ms | Model Compute Time: 512.84ms
+2025-06-27 22:26:01,736 - INFO - Iter: 1060, Train loss: 2.5832, LR: 0.000488, Data Loading Time: 6.86ms | Model Compute Time: 509.36ms
+2025-06-27 22:26:12,199 - INFO - Iter: 1080, Train loss: 2.6286, LR: 0.000488, Data Loading Time: 7.01ms | Model Compute Time: 516.08ms
+2025-06-27 22:26:22,653 - INFO - Iter: 1100, Train loss: 2.5451, LR: 0.000488, Data Loading Time: 6.94ms | Model Compute Time: 508.04ms
+2025-06-27 22:26:33,155 - INFO - Iter: 1120, Train loss: 2.5514, LR: 0.000487, Data Loading Time: 6.14ms | Model Compute Time: 521.12ms
+2025-06-27 22:26:43,712 - INFO - Iter: 1140, Train loss: 2.4695, LR: 0.000487, Data Loading Time: 6.82ms | Model Compute Time: 527.49ms
+2025-06-27 22:26:54,260 - INFO - Iter: 1160, Train loss: 2.5625, LR: 0.000486, Data Loading Time: 6.67ms | Model Compute Time: 506.33ms
+2025-06-27 22:27:04,691 - INFO - Iter: 1180, Train loss: 2.4940, LR: 0.000485, Data Loading Time: 6.00ms | Model Compute Time: 519.12ms
+2025-06-27 22:27:15,191 - INFO - Iter: 1200, Train loss: 2.4988, LR: 0.000485, Data Loading Time: 6.60ms | Model Compute Time: 520.49ms
+2025-06-27 22:27:32,447 - INFO - Iter: 1200, Val loss: 2.5225, LR: 0.000485
+2025-06-27 22:27:43,345 - INFO - Iter: 1220, Train loss: 2.4482, LR: 0.000484, Data Loading Time: 7.09ms | Model Compute Time: 521.36ms
+2025-06-27 22:27:53,879 - INFO - Iter: 1240, Train loss: 2.4673, LR: 0.000484, Data Loading Time: 6.77ms | Model Compute Time: 517.07ms
+2025-06-27 22:28:04,317 - INFO - Iter: 1260, Train loss: 2.5068, LR: 0.000483, Data Loading Time: 6.59ms | Model Compute Time: 520.24ms
+2025-06-27 22:28:14,852 - INFO - Iter: 1280, Train loss: 2.3799, LR: 0.000483, Data Loading Time: 6.82ms | Model Compute Time: 523.73ms
+2025-06-27 22:28:25,258 - INFO - Iter: 1300, Train loss: 2.4684, LR: 0.000482, Data Loading Time: 7.43ms | Model Compute Time: 510.75ms
+2025-06-27 22:28:35,681 - INFO - Iter: 1320, Train loss: 2.4527, LR: 0.000481, Data Loading Time: 7.49ms | Model Compute Time: 542.43ms
+2025-06-27 22:28:46,443 - INFO - Iter: 1340, Train loss: 2.4042, LR: 0.000481, Data Loading Time: 7.70ms | Model Compute Time: 546.58ms
+2025-06-27 22:28:56,805 - INFO - Iter: 1360, Train loss: 2.4759, LR: 0.000480, Data Loading Time: 7.22ms | Model Compute Time: 509.80ms
+2025-06-27 22:29:07,225 - INFO - Iter: 1380, Train loss: 2.6011, LR: 0.000480, Data Loading Time: 6.99ms | Model Compute Time: 509.22ms
+2025-06-27 22:29:17,758 - INFO - Iter: 1400, Train loss: 2.5011, LR: 0.000479, Data Loading Time: 6.53ms | Model Compute Time: 523.98ms
+2025-06-27 22:29:35,015 - INFO - Iter: 1400, Val loss: 2.4342, LR: 0.000479
+2025-06-27 22:29:45,731 - INFO - Iter: 1420, Train loss: 2.5066, LR: 0.000478, Data Loading Time: 6.61ms | Model Compute Time: 522.07ms
+Traceback (most recent call last):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/Users/charon/Documents/GitHub/CS336/basics/train.py", line 126, in <module>
+    clip_gradient(model.parameters(), 1.0)
+  File "/Users/charon/Documents/GitHub/CS336/basics/nn_utils.py", line 29, in clip_gradient
+    g *= clip_coef
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/Users/charon/Documents/GitHub/CS336/basics/train.py", line 126, in <module>
+    clip_gradient(model.parameters(), 1.0)
+  File "/Users/charon/Documents/GitHub/CS336/basics/nn_utils.py", line 29, in clip_gradient
+    g *= clip_coef
+KeyboardInterrupt

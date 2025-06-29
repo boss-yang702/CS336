@@ -1,0 +1,31 @@
+2025-06-27 22:02:05,652 - INFO - Training with config: {'dataset_name': 'tinystory', 'context_length': 256, 'batch_size': 32, 'device': 'mps', 'vocab_size': 10000, 'context_size': 1024, 'num_layers': 4, 'd_model': 512, 'num_heads': 16, 'd_ff': 1344, 'attn_pdrop': 0.1, 'resid_pdrop': 0.1, 'init_from': 'scratch', 'total_iters': 20000, 'warmup_iters': 200, 'cosine_cycle_iters': 20000, 'max_learning_rate': 0.0005, 'min_learning_rate': 0, 'weight_decay': 0.001, 'wandb_logging': True, 'wandb_project': 'cs336-assignment1', 'wandb_run_name': 'tinystories-baseline', 'log_interval': 20, 'eval_interval': 200, 'eval_iters': 100, 'no_rmsnorm': False, 'parallel_layers': False, 'post_norm': False}
+2025-06-27 22:02:06,439 - INFO - number of non-embeding parameters: 8.23
+2025-06-27 22:02:08,752 - INFO - Iter: 0, Train loss: 9.2539, LR: 0.000000, Time: 2195.52ms
+2025-06-27 22:02:17,683 - INFO - Iter: 0, Val loss: 9.2494, LR: 0.000000
+2025-06-27 22:02:23,735 - INFO - Iter: 20, Train loss: 9.0253, LR: 0.000050, Time: 270.86ms
+2025-06-27 22:02:29,185 - INFO - Iter: 40, Train loss: 8.2368, LR: 0.000100, Time: 273.19ms
+2025-06-27 22:02:34,632 - INFO - Iter: 60, Train loss: 6.3230, LR: 0.000150, Time: 272.49ms
+2025-06-27 22:02:40,078 - INFO - Iter: 80, Train loss: 5.3015, LR: 0.000200, Time: 272.05ms
+2025-06-27 22:02:45,563 - INFO - Iter: 100, Train loss: 4.7533, LR: 0.000250, Time: 272.65ms
+2025-06-27 22:02:51,008 - INFO - Iter: 120, Train loss: 4.4215, LR: 0.000300, Time: 270.30ms
+2025-06-27 22:02:56,470 - INFO - Iter: 140, Train loss: 4.1558, LR: 0.000350, Time: 272.45ms
+Traceback (most recent call last):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/Users/charon/Documents/GitHub/CS336/basics/train.py", line 121, in <module>
+    clip_gradient(model.parameters(), 1.0)
+  File "/Users/charon/Documents/GitHub/CS336/basics/nn_utils.py", line 27, in clip_gradient
+    clip_coef = min(1, max_norm / (norm + 1e-6))
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 187, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/Users/charon/miniconda3/envs/llm/lib/python3.10/runpy.py", line 110, in _get_module_details
+    __import__(pkg_name)
+  File "/Users/charon/Documents/GitHub/CS336/basics/train.py", line 121, in <module>
+    clip_gradient(model.parameters(), 1.0)
+  File "/Users/charon/Documents/GitHub/CS336/basics/nn_utils.py", line 27, in clip_gradient
+    clip_coef = min(1, max_norm / (norm + 1e-6))
+KeyboardInterrupt

@@ -1,0 +1,17 @@
+{"time":"2025-06-27T20:40:06.777825+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/Users/charon/Documents/GitHub/CS336/wandb/run-20250627_204006-x0hmn4lh/logs/debug-core.log"}
+{"time":"2025-06-27T20:40:07.39638+08:00","level":"INFO","msg":"stream: created new stream","id":"x0hmn4lh"}
+{"time":"2025-06-27T20:40:07.396432+08:00","level":"INFO","msg":"stream: started","id":"x0hmn4lh"}
+{"time":"2025-06-27T20:40:07.396453+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"x0hmn4lh"}
+{"time":"2025-06-27T20:40:07.396453+08:00","level":"INFO","msg":"sender: started","stream_id":"x0hmn4lh"}
+{"time":"2025-06-27T20:40:07.396473+08:00","level":"INFO","msg":"handler: started","stream_id":"x0hmn4lh"}
+{"time":"2025-06-27T20:40:07.646853+08:00","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-06-27T20:40:07.646937+08:00","level":"ERROR","msg":"runupserter: failed to init run","error":"returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2025-06-27T20:40:08.648997+08:00","level":"INFO","msg":"stream: closing","id":"x0hmn4lh"}
+{"time":"2025-06-27T20:40:08.64935+08:00","level":"ERROR","msg":"sender: uploadConfigFile: stream: no run"}
+{"time":"2025-06-27T20:40:08.954563+08:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-06-27T20:40:08.954643+08:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project /cs336-assignment1 not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-06-27T20:40:08.954999+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-27T20:40:08.955024+08:00","level":"INFO","msg":"handler: closed","stream_id":"x0hmn4lh"}
+{"time":"2025-06-27T20:40:08.955029+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"x0hmn4lh"}
+{"time":"2025-06-27T20:40:08.95503+08:00","level":"INFO","msg":"sender: closed","stream_id":"x0hmn4lh"}
+{"time":"2025-06-27T20:40:08.955138+08:00","level":"INFO","msg":"stream: closed","id":"x0hmn4lh"}
